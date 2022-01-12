@@ -4,7 +4,7 @@ const News = {
   render() {
     return /* html */ `
       <h2 class="text-xl py-4 text-blue font-semibold uppercase">Tin tức học tập</h2>
-        <div  class="flex justify-between gap-2 ">
+        <div  class="flex justify-between gap-2">
         ${data.map(function (post) {
           return `<div class="w-305 h-360 border-2 border-gray">
                         <div>
