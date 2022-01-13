@@ -6,9 +6,10 @@ import Signup from "./pages/signup";
 import Signin from "./pages/signin";
 import Admin from "./pages/admin";
 import Dashboard from "./pages/dashboard";
-import News from "./pages/News";
+import News from "./pages/news";
 import AddNews from "./pages/addNews";
 import EditNews from "./pages/editNews";
+import DetailNews from "./pages/detailNews";
 
 const router = new Navigo("/", { linksSelector: " a" });
 const print = (content) => {
@@ -40,10 +41,15 @@ router.on({
   "/admin/news": () => {
     print(News.render());
   },
+  "/news/:id": ({ data }) => {
+    const { id } = data;
+    print(DetailNews.render(id));
+  },
   "/admin/news/add": () => {
     print(AddNews.render());
   },
-  "/adim/news/:id/edit": (id) => {
+  "/admin/news/:id/edit": ({ data }) => {
+    const { id } = data;
     print(EditNews.render(id));
   },
 });

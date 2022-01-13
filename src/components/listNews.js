@@ -12,7 +12,7 @@ const ListNews = {
                             <img src="${post.image}" class="w-255 h-175">
                           </a>
                         </div>
-                        <h3 class="text-sm text-yellow font-semibold py-2"><a>${post.title}</a></h3>
+                        <h3 class="text-sm text-yellow font-semibold py-2"><a href='/news/${post.id}'>${post.title}</a></h3>
                         <p class="text-xs">${post.desc}</p>
                       </div>`;
         })}

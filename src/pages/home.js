@@ -14,10 +14,6 @@ const HomePage = {
           ${Footer.render()}
         </div>
       </div>
-      
-    
-   
-    
     `;
   },
 };
