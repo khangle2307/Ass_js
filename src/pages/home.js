@@ -1,7 +1,7 @@
 import Banner from "../components/banner";
 import Footer from "../components/footer";
 import Header from "../components/header";
-import News from "../components/news";
+import ListNews from "../components/listNews";
 
 const HomePage = {
   render() {
@@ -10,7 +10,7 @@ const HomePage = {
         <div class="w-980 mx-auto">
           ${Header.render()}
           ${Banner.render()}
-          ${News.render()}
+          ${ListNews.render()}
           ${Footer.render()}
         </div>
       </div>

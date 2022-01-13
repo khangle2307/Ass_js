@@ -6,6 +6,7 @@ import Signup from "./pages/signup";
 import Signin from "./pages/signin";
 import Admin from "./pages/admin";
 import Dashboard from "./pages/dashboard";
+import News from "./pages/News";
 
 const router = new Navigo("/", { linksSelector: " a" });
 const print = (content) => {
@@ -33,6 +34,9 @@ router.on({
   },
   "/admin/dashboard": () => {
     print(Dashboard.render());
+  },
+  "/admin/news": () => {
+    print(News.render());
   },
 });
 

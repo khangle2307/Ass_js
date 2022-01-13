@@ -1,6 +1,6 @@
 import data from "../data";
 
-const News = {
+const ListNews = {
   render() {
     return /* html */ `
       <h2 class="text-xl py-4 text-blue font-semibold uppercase">Tin tức học tập</h2>
@@ -35,4 +35,4 @@ const News = {
   },
 };
 
-export default News;
+export default ListNews;
