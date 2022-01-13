@@ -8,6 +8,7 @@ import Admin from "./pages/admin";
 import Dashboard from "./pages/dashboard";
 import News from "./pages/News";
 import AddNews from "./pages/addNews";
+import EditNews from "./pages/editNews";
 
 const router = new Navigo("/", { linksSelector: " a" });
 const print = (content) => {
@@ -42,17 +43,11 @@ router.on({
   "/admin/news/add": () => {
     print(AddNews.render());
   },
+  "/adim/news/:id/edit": (id) => {
+    print(EditNews.render(id));
+  },
 });
 
 router.notFound(() => console.log("not Found"));
 
 router.resolve();
-// var menuList = ["menu 1", "menu 2", "menu 3"];
-
-// const menuElement = document.querySelector("#menu");
-// if (menuElement) {
-//   for (let i = 0; i < menuList.length; i++) {
-//     menuElement.innerHTML += `<li>${menuList[i]}</li>`;
-//   }
-// }
-// template string
