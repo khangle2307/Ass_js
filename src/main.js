@@ -4,6 +4,8 @@ import About from "./pages/about";
 import Product from "./pages/product";
 import Signup from "./pages/signup";
 import Signin from "./pages/signin";
+import Admin from "./pages/admin";
+import Dashboard from "./pages/dashboard";
 
 const router = new Navigo("/", { linksSelector: " a" });
 const print = (content) => {
@@ -25,6 +27,12 @@ router.on({
   },
   "/signin": () => {
     print(Signin.render());
+  },
+  "/admin": () => {
+    print(Admin.render());
+  },
+  "/admin/dashboard": () => {
+    print(Dashboard.render());
   },
 });
 
