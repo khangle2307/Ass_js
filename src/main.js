@@ -7,6 +7,7 @@ import Signin from "./pages/signin";
 import Admin from "./pages/admin";
 import Dashboard from "./pages/dashboard";
 import News from "./pages/News";
+import AddNews from "./pages/addNews";
 
 const router = new Navigo("/", { linksSelector: " a" });
 const print = (content) => {
@@ -37,6 +38,9 @@ router.on({
   },
   "/admin/news": () => {
     print(News.render());
+  },
+  "/admin/news/add": () => {
+    print(AddNews.render());
   },
 });
 
