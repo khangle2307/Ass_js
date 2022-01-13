@@ -6,14 +6,16 @@ import News from "../components/news";
 const HomePage = {
   render() {
     return /* html */ `
-    <div class="w-1200">
-      <div class="w-980 mx-auto">
-      ${Header.render()}
-      ${Banner.render()}
-      ${News.render()}
-      ${Footer.render()}
+      <div class="w-1140">
+        <div class="w-980 mx-auto">
+          ${Header.render()}
+          ${Banner.render()}
+          ${News.render()}
+          ${Footer.render()}
+        </div>
       </div>
-    </div>
+      
+    
    
     
     `;
