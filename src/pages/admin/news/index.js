@@ -1,8 +1,11 @@
-import Data from "../data";
+import Navbar from "../../../components/admin/navbar";
+import Data from "../../../data";
 
 const News = {
   render() {
     return /* html */ `
+         ${Navbar.render()}
+         <h1 class="text-center text-2xl p-4">Quản lý bài viết</h1>
          <div class="flex flex-col">
          <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">

@@ -1,4 +1,4 @@
-import Data from "../data";
+import Data from "../../../data";
 
 const EditNews = {
   render(id) {

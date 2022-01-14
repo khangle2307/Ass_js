@@ -1,14 +1,14 @@
 import Navigo from "navigo";
-import HomePage from "./pages/home";
-import About from "./pages/about";
-import Product from "./pages/product";
-import Signup from "./pages/signup";
-import Signin from "./pages/signin";
-import Admin from "./pages/admin";
-import Dashboard from "./pages/dashboard";
-import News from "./pages/news";
-import AddNews from "./pages/addNews";
-import EditNews from "./pages/editNews";
+import HomePage from "./pages/view/";
+import About from "./pages/view/about";
+import Product from "./pages/view/product";
+import Signup from "./pages/admin/signup";
+import Signin from "./pages/admin/signin";
+import Admin from "./pages/admin/";
+import Dashboard from "./pages/admin/dashboard";
+import News from "./pages/admin/news";
+import AddNews from "./pages/admin/news/add";
+import EditNews from "./pages/admin/news/edit";
 import DetailNews from "./pages/detailNews";
 
 const router = new Navigo("/", { linksSelector: " a" });

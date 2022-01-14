@@ -1,7 +1,7 @@
-import Banner from "../components/banner";
-import Footer from "../components/footer";
-import Header from "../components/header";
-import ListNews from "../components/listNews";
+import Banner from "../../components/view/banner";
+import Footer from "../../components/view/footer";
+import Header from "../../components/view/header";
+import ListNews from "../../components/view/listNews";
 
 const HomePage = {
   render() {
