@@ -1,3 +1,4 @@
+import Button from "../../../components/admin/button";
 import Navbar from "../../../components/admin/navbar";
 import Data from "../../../data";
 
@@ -76,6 +77,7 @@ const News = {
             </div>
          </div>
          </div>
+         ${Button.render()}
       `;
   },
 };

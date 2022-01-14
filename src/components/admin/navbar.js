@@ -1,3 +1,5 @@
+import Button from "./button";
+
 const Navbar = {
   render() {
     return /* html */ `
@@ -138,6 +140,7 @@ const Navbar = {
             </div>
          </div>
       </nav>
+     
       `;
   },
 };
